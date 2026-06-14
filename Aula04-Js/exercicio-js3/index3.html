@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Exercicio De JS4</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá,Mundo</h1>
+    <p>
+        Estou muito feliz que estou estudando progamação.. Obrigado meu senhor
+    </p>
+
+    
+    <script>
+        let nome = window.prompt("como é seu nome?")
+        document.writeln(`Olá ${nome}. seu nome tem ${nome.length} letras <br/> `)
+        document.writeln(`Olá ${nome}. seu nome em letras maiusculas é ${nome.toUpperCase()} <br/>` )
+        document.write(`Olá ${nome}.  seu nome em letras minusculas é ${nome.toLowerCase()}`)
+      
+    </script>
+</body>
+</html>
