@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Condiões</title>
+</head>
+<body>
+    <h1>Sistema De Multas</h1>
+    Velocidade do carro : <input type="number" name="vel" id="vel"> KM/H
+    <input type="button" value="ENVIAR" id="btn">
+    <div id="resultado">
+
+
+    </div>
+    
+
+
+
+    <script>
+        let butao = document.querySelector('#btn')
+        butao.addEventListener('click', clicar)
+
+        function clicar(){
+            let txtvelo = document.querySelector('#vel')
+            let res = document.querySelector('#resultado')
+            let velo = Number(txtvelo.value)
+            res.innerHTML = `A sua velocidade atual é: ${velo}  `
+            if (velo > 80) {
+                res.innerHTML += 'Voce passou do limite de velocidade, sera Multado!'
+            }
+            res.innerHTML += ' Diriga com cuidado '
+        }
+
+    </script>
+</body>
+</html>

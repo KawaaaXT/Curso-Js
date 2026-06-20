@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Condições</title>
+</head>
+<body>
+    <h1>ESTADOS UNDOS</h1>
+   Qual é sua naturalidade: <input type="text" name="usa" id="unidos" placeholder="Digite seu pais">
+    <button id="btn">ENVIAR</button>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        let botao = document.querySelector('#btn')
+        botao.addEventListener('click', clicar)
+
+        function clicar(){
+            let pais = document.querySelector('#unidos')
+            let resul = document.querySelector('#resultado')
+            let paais = (pais.value.toLowerCase())
+            if (paais == 'brasil'){
+                resul.innerHTML = ' voce é natural do brasil '
+            } else if (paais == 'estados unidos') {
+                resul.innerHTML = ' você é americano '
+            } else  {
+                resul.innerHTML = ' você é estrangeiro'
+            
+            }
+        }
+    </script>
+    
+</body>
+</html>
