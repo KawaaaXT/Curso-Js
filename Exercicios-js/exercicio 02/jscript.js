@@ -52,8 +52,11 @@ function finalizar(){
         let total = valores.length
         let maior = valores[0]
         let menor = valores [0]
+        let soma = 0
+        let media = 0
 
         for(let poos in valores ) {
+            soma += valores[poos]
             if(valores[poos] > maior ) {
                 maior = valores[poos]
 
@@ -65,11 +68,13 @@ function finalizar(){
 
 
         }
-           
+        media = soma / total
         resul.innerHTML = ''
         resul.innerHTML += ` <p> ao todo temos ${total}  elementos encontrado. </p>`
-        resul.innerHTML += `<p> o maior numero encontrado na lista foi ${maior} </p>`
-        resul.innerHTML += `<p> o menor numero encontrado na lista foi ${menor} </p>`
+        resul.innerHTML += `<p> o maior numero encontrado na lista foi :  ${maior} </p>`
+        resul.innerHTML += `<p> o menor numero encontrado na lista foi :  ${menor} </p>`
+        resul.innerHTML += `<p> a soma de todos os valores foi :  ${soma} </p>`
+        resul.innerHTML += `<p> a media de todos os valores foi :  ${media.toFixed(2)} </p>`
     }
 
 

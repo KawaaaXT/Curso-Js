@@ -30,8 +30,32 @@ main{
 }
 
 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
     margin-top: 10px;
+
 }
+#content-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+
+    
+}
+input{
+    cursor: pointer;
+    padding: 10px;
+    
+}
+#btnSomar, #btnSub, #btnMultiplicar, #btnDividir{
+    margin-bottom: 10px;
+}
+
+
+
 
 img{
    
@@ -64,7 +88,14 @@ footer{
 
     font-style: italic;
 }
-
-p, h1{
+p{
+    
+    text-indent: 10px;
+    
+}
+h1{
     text-align: center;
+}
+input{
+    margin: auto;
 }
